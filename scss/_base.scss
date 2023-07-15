@@ -1,28 +1,38 @@
 @font-face {
-    font-family: 'blur3';
-    src: url('../fonts/Gaussian\ Blur.ttf');
+    font-family: 'fu1';
+    src: url('../font/PoetsenOne-Regular.ttf');
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: rgb(226, 226, 226);
 }
 
-body{
-    background: rgb(46,146,170);
-    background: radial-gradient(circle, rgba(46,146,170,1) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 90%, rgba(46,146,170,1) 100%);
+// body{
+//     background-image: url('');
+// }
+
+h1{
+    font-family: 'fu1', sans-serif;
+    margin: 20px 0;
+}
+h2{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 1rem;
 }
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 p{
-    font-family: 'blur3', sans-serif;
-    margin-bottom: 10px;
-    text-align: center;
+    margin: 20px;
+    max-width: 800px;
 }
 
 ul,
@@ -50,11 +60,11 @@ video{
     align-items:$align;
 }
 
-@keyframes mover-img{
-    0%{
-        transform: translatex(500px);
-    }
-    100%{
-        transform: translatex(0px);
-    }
-}
+// @keyframes mover-img{
+//     0%{
+//         transform: translatex(500px);
+//     }
+//     100%{
+//         transform: translatex(0px);
+//     }
+// }

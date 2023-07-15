@@ -1,3 +1,20 @@
 MARCAS
 
+REUNION
 12:00 15/07/2023
+--Estructurado base del sitio
+--Estructurado base index
+13:40
+
+LIBRE
+
+14:00
+--MAQUETADO INDEX
+14:20
+--CSS INDEX
+14:50
+
+LIBRE
+
+16:15
+--CSS HEADER

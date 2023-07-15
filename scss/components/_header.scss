@@ -1,0 +1,48 @@
+header {
+    width: 100%;
+    text-align: center;
+    background-image: url('../media/img/mueble/mueble14.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .menu {
+        @include flexbox(flex, center, center);
+        flex-direction: column;
+
+        img {
+            width: 100px;
+            border-radius: 100%;
+            margin-top: 20px
+        }
+
+        ul {
+            @include flexbox(flex, space-around, center);
+            width: 100%;
+            margin: 20px 0;
+            background-color: rgba(0, 0, 0, 0.455);
+            border-radius: 20px;
+            padding: 8px;
+
+            i{
+                font-size: 1.8rem;
+                color: white;
+                text-shadow: (-5px 0 1px rgb(55, 55, 242)),(5px 0 1px rgb(255, 89, 89));
+            }
+        }
+    }
+
+    .menu-nav {
+        @include flexbox(flex, space-around, center);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.497);
+        padding: 8px;
+        
+        a{
+            color: white;
+
+            li{
+                text-shadow: 5px 5px 2px rgb(236, 236, 236);
+            }
+        }
+    }
+}

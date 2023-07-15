@@ -1,0 +1,40 @@
+main {
+    @include flexbox(flex, center, center);
+    flex-direction: column;
+    text-align: center;
+
+    .cont-galeria {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: center;
+        height: 30vh;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        animation: animacion 20s infinite;
+        border: double 5px rgb(133, 133, 133);
+        margin-bottom: 20px;
+    }
+
+    @keyframes animacion {
+        0% {
+            background-image: url('../media/img/mueble/mueble14b.jpg');           
+        }
+        20% {
+            background-image: url('../media/img/construccion/img2.jpg');
+        }
+        40% {
+            background-image: url('../media/img/mueble/mueble13.jpg');
+        }
+        60% {
+            background-image: url('../media/img/atril/atril12.jpg');
+        }
+        80% {
+            background-image: url('../media/img/construccion/img2.jpg');
+        }
+        100% {
+            background-image: url('../media/img/mueble/mueble14b.jpg');
+        }
+    }
+}
