@@ -2,8 +2,11 @@ footer {
     @include flexbox(flex, center, center);
     flex-direction: column;
     width: 100%;
+    background-image: url('../media/img/foot3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-    
 
     .foo-cont {
         @include flexbox(flex, space-around, start);
@@ -26,6 +29,25 @@ footer {
 
                 li{
                     margin: 2px 0;
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.519);
+                    border-radius: 10px;
+                    border: 2px solid black;
+                    padding: 5px;
+                    font-style: italic;
+                    
+                    .bi-facebook{
+                        color: rgb(85, 85, 216);
+                        font-size: 1.3rem;
+                    }
+                    .bi-instagram{
+                        color: rgb(231, 73, 25);
+                        font-size: 1.3rem;
+                    }
+                    .bi-whatsapp{
+                        color: rgb(19, 160, 87);
+                        font-size: 1.3rem;
+                    }
                 }
             }
         }

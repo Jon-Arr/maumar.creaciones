@@ -10,23 +10,43 @@ header {
         flex-direction: column;
 
         img {
-            width: 100px;
+            width: 150px;
             border-radius: 100%;
-            margin-top: 20px
+            margin-top: 20px;
+        }
+
+        img:hover{
+            rotate: y 360deg;
+            transition: 1s;
         }
 
         ul {
             @include flexbox(flex, space-around, center);
             width: 100%;
             margin: 20px 0;
-            background-color: rgba(0, 0, 0, 0.455);
+            background-color: rgba(0, 0, 0, 0.684);
             border-radius: 20px;
             padding: 8px;
 
             i{
                 font-size: 1.8rem;
-                color: white;
-                text-shadow: (-5px 0 1px rgb(55, 55, 242)),(5px 0 1px rgb(255, 89, 89));
+                color: white;                
+            }
+            
+
+            .bi-facebook{
+                color: rgb(80, 80, 204);
+            }
+            .bi-instagram{
+                color: rgb(233, 77, 42);
+                // color: linear-gradient(141deg, rgba(24,41,162,1) 0%, rgba(161,43,143,1) 39%, rgba(147,46,160,1) 78%, rgba(170,46,46,1) 100%);
+            }
+            .bi-whatsapp{
+                color: rgb(67, 169, 67);
+            }
+            i:hover{
+                text-shadow: (5px 0 3px red), (-5px 0 3px rgb(13, 0, 255));
+                transition: 0.5s;
             }
         }
     }
@@ -34,14 +54,14 @@ header {
     .menu-nav {
         @include flexbox(flex, space-around, center);
         border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.497);
+        background-color: rgba(0, 0, 0, 0.599);
         padding: 8px;
         
         a{
             color: white;
 
             li{
-                text-shadow: 5px 5px 2px rgb(236, 236, 236);
+                text-shadow: 5px 5px 5px rgb(236, 236, 236);
             }
         }
     }

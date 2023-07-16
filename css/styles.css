@@ -11,15 +11,26 @@
 h1 {
   font-family: "fu1", sans-serif;
   margin: 20px 0;
+  color: rgb(237, 145, 64);
+  text-shadow: 5px 5px 8px rgb(0, 0, 0);
 }
 
 h2 {
   font-size: 1.3rem;
   margin-bottom: 20px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.753);
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 5px;
 }
 
 h3 {
   font-size: 1rem;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.753);
+  border-radius: 10px;
+  padding: 2px;
 }
 
 a {
@@ -30,6 +41,9 @@ a {
 p {
   margin: 20px;
   max-width: 800px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.556);
+  border-radius: 10px;
 }
 
 ul,
@@ -65,9 +79,13 @@ header .menu {
   flex-direction: column;
 }
 header .menu img {
-  width: 100px;
+  width: 150px;
   border-radius: 100%;
   margin-top: 20px;
+}
+header .menu img:hover {
+  rotate: y 360deg;
+  transition: 1s;
 }
 header .menu ul {
   display: flex;
@@ -75,28 +93,40 @@ header .menu ul {
   align-items: center;
   width: 100%;
   margin: 20px 0;
-  background-color: rgba(0, 0, 0, 0.455);
+  background-color: rgba(0, 0, 0, 0.684);
   border-radius: 20px;
   padding: 8px;
 }
 header .menu ul i {
   font-size: 1.8rem;
   color: white;
-  text-shadow: -5px 0 1px rgb(55, 55, 242), 5px 0 1px rgb(255, 89, 89);
+}
+header .menu ul .bi-facebook {
+  color: rgb(80, 80, 204);
+}
+header .menu ul .bi-instagram {
+  color: rgb(233, 77, 42);
+}
+header .menu ul .bi-whatsapp {
+  color: rgb(67, 169, 67);
+}
+header .menu ul i:hover {
+  text-shadow: 5px 0 3px red, -5px 0 3px rgb(13, 0, 255);
+  transition: 0.5s;
 }
 header .menu-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.497);
+  background-color: rgba(0, 0, 0, 0.599);
   padding: 8px;
 }
 header .menu-nav a {
   color: white;
 }
 header .menu-nav a li {
-  text-shadow: 5px 5px 2px rgb(236, 236, 236);
+  text-shadow: 5px 5px 5px rgb(236, 236, 236);
 }
 
 footer {
@@ -105,6 +135,10 @@ footer {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  background-image: url("../media/img/foot3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 footer .foo-cont {
   display: flex;
@@ -127,6 +161,24 @@ footer .foo-cont-rs-menu {
 }
 footer .foo-cont-rs-menu li {
   margin: 2px 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.519);
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 5px;
+  font-style: italic;
+}
+footer .foo-cont-rs-menu li .bi-facebook {
+  color: rgb(85, 85, 216);
+  font-size: 1.3rem;
+}
+footer .foo-cont-rs-menu li .bi-instagram {
+  color: rgb(231, 73, 25);
+  font-size: 1.3rem;
+}
+footer .foo-cont-rs-menu li .bi-whatsapp {
+  color: rgb(19, 160, 87);
+  font-size: 1.3rem;
 }
 
 main {
@@ -135,19 +187,48 @@ main {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background-image: url("../media/img/mueble/mueble13.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
 }
 main .cont-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: black;
   background-position: center;
   height: 30vh;
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
   animation: animacion 20s infinite;
-  border: double 5px rgb(133, 133, 133);
   margin-bottom: 20px;
+}
+main .etiquetas {
+  width: 100%;
+}
+main .etiquetas marquee li {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.667);
+  border-radius: 100%;
+  border: 2px solid black;
+  text-align: center;
+  overflow: hidden;
+}
+main .etiquetas marquee li img {
+  width: 100%;
+  height: 100%;
+}
+main .etiquetas marquee li a {
+  color: white;
 }
 @keyframes animacion {
   0% {

@@ -2,39 +2,80 @@ main {
     @include flexbox(flex, center, center);
     flex-direction: column;
     text-align: center;
+    background-image: url('../media/img/mueble/mueble13.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p{
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
 
     .cont-galeria {
+        @include flexbox(flex, center, center);
         background-size: contain;
         background-repeat: no-repeat;
-        background-color: black;
+        // background-color: black;
         background-position: center;
         height: 30vh;
         width: 100%;
         max-width: 400px;
         border-radius: 10px;
         animation: animacion 20s infinite;
-        border: double 5px rgb(133, 133, 133);
+        // border: double 10px rgb(0, 0, 0);
         margin-bottom: 20px;
+    }
+
+    .etiquetas{
+        width: 100%;
+        marquee{
+            li{
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                background-color: rgba(0, 0, 0, 0.667);
+                border-radius: 100%;
+                border: 2px solid black;
+                text-align: center;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                a{            
+                    color: white;
+                }
+            }
+        }
     }
 
     @keyframes animacion {
         0% {
-            background-image: url('../media/img/mueble/mueble14b.jpg');           
+            background-image: url('../media/img/mueble/mueble14b.jpg');
         }
+
         20% {
             background-image: url('../media/img/construccion/img2.jpg');
         }
+
         40% {
             background-image: url('../media/img/mueble/mueble13.jpg');
         }
+
         60% {
             background-image: url('../media/img/atril/atril12.jpg');
         }
+
         80% {
             background-image: url('../media/img/construccion/img2.jpg');
         }
+
         100% {
             background-image: url('../media/img/mueble/mueble14b.jpg');
         }
     }
+
 }
